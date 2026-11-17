@@ -1,0 +1,6 @@
+{
+  "name": "jetzt-alarm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Native wake-up alarms for Jetzt: AlarmKit on iOS 26+, AlarmManager.setAlarmClock on Android."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Jetzt – Tagesassistent",
+  "short_name": "Jetzt",
+  "description": "Was sollte ich jetzt gerade tun? Tagesplan, Erinnerungen und Timer.",
+  "lang": "de",
+  "start_url": "/jetzt/",
+  "scope": "/jetzt/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2F2F7",
+  "theme_color": "#1F7A57",
+  "icons": [
+    { "src": "/jetzt/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/jetzt/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/jetzt/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

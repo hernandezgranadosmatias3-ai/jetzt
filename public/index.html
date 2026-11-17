@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="%LANG_ISO_CODE%">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>%WEB_TITLE%</title>
+    <!-- Home-screen web app (iPhone): full screen, own icon, own storage. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Jetzt" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="/jetzt/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/jetzt/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/jetzt/icons/icon-192.png" />
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+        background: #f2f2f7;
+      }
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background: #000;
+        }
+      }
+      body {
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        font-family: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>Jetzt braucht JavaScript.</noscript>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/jetzt/sw.js', { scope: '/jetzt/' }).catch(function () {});
+        });
+      }
+    </script>
+  </body>
+</html>
