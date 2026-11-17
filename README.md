@@ -20,7 +20,40 @@ Minimalistische Routine-, Wecker- und Produktivitäts-App für iOS und Android
 | **Tagesrückblick** | Erledigt / verschoben / ausgelassen / offen, Prozent, „Morgen vorbereiten“ mit Weckzeit für morgen und Vorschau |
 | **Design** | Hell/Dunkel/System, native Tabs (Liquid Glass ab iOS 26), SF Symbols / Material Symbols, ruhige grüne Akzentfarbe |
 
-## Auf dein iPhone (für dich selbst, ohne App Store)
+## Benutzen: Web-App auf dem iPhone
+
+**Adresse:** https://hernandezgranadosmatias3-ai.github.io/jetzt/
+
+1. Die Adresse auf dem iPhone in **Safari** öffnen.
+2. Unten auf **Teilen** (Quadrat mit Pfeil) tippen → **„Zum Home-Bildschirm“** → Hinzufügen.
+3. Jetzt über das neue Symbol auf dem Home-Bildschirm starten (nicht mehr über Safari) und die
+   Einrichtung durchgehen.
+
+Die App läuft dann im Vollbild wie eine normale App, auch offline. Deine Aufgaben und
+Statistiken werden **nur auf deinem iPhone** gespeichert (im Speicher dieser Home-Bildschirm-App).
+
+**Was die Web-Version kann und was nicht**
+
+| Funktioniert | Geht im Browser nicht |
+| --- | --- |
+| Tagesplan, „Jetzt an der Reihe“, Fortschritt | Echter Wecker → Zeiten einmal in der **Uhr-App** stellen (die Wecker-Seite zeigt sie) |
+| Timer mit Pause/Verlängern, Plan rückt nach | Erinnerungen bei gesperrtem iPhone → Ton + Hinweis nur, **solange Jetzt geöffnet ist** |
+| „Ich bin zu Hause“ mit automatischer Planverschiebung | Automatische Zuhause-Erkennung (Geofencing) |
+| Kalender, Statistik, Tagesrückblick, Aufgaben bearbeiten | |
+
+**Updates:** Jede Änderung, die in das GitHub-Repo
+[hernandezgranadosmatias3-ai/jetzt](https://github.com/hernandezgranadosmatias3-ai/jetzt)
+geschoben wird, baut GitHub automatisch neu (`.github/workflows/pages.yml`, ca. 2–3 Minuten).
+Die App holt sich die neue Version beim nächsten Öffnen.
+
+**Achtung beim Löschen:** Entfernst du das Symbol vom Home-Bildschirm, sind auch die Daten weg.
+
+## Native App (optional)
+
+Die folgenden Abschnitte betreffen die native iOS-/Android-Version mit echtem Wecker und
+Geofencing. Für die Web-App braucht man sie nicht.
+
+### Auf dein iPhone (ohne App Store)
 
 Die App wird auf deinem Mac gebaut und per Kabel auf dein iPhone gespielt. Danach läuft sie
 eigenständig – der Mac muss nicht an sein.
